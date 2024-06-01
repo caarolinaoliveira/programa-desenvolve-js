@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boti.Students Cosméticos</title>
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icones-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+    <script src="js/script.js" defer type="module"></script>
+
+</head>
+
+<body>
+    <script>
+        window.onload = function() {
+            alert('A validação de formulário está no ícone de user, em vermelho. Clique para testar!');
+        };
+        </script>   
+         <header>
+        <div class="nav-top">BOTI.STUDENTS COSMÉTICOS</div>
+        <div class="nav-middle">
+            <div class="nav-left">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu"><span class="material-symbols-outlined icone-nav icone-hamburguer">menu</span></label>
+                <ul class="lista-menu">
+                    <li class="lista-menu-produto "> <a href="#produtos">Produtos</a></li>
+                    <li class="lista-menu-aprenda  "> <a href="#aprennda">Aprenda</a></li>
+                    <li class="lista-menu-contato "> <a href="#contato">Contato</a></li>
+                </ul>
+
+                <a href="#"><span class="material-symbols-outlined icone-nav">search</span></a>
+            </div>
+            <div class="nav-right">
+                <a href="#produtos"><span class="material-symbols-outlined icone-nav ">favorite</span></a>
+                <a href="register.html"><span class="material-symbols-outlined icone-nav icone-user ">person</span></a>
+                <a href="#"><span class="material-symbols-outlined icone-nav ">shopping_cart</span></a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main>
+
+        <!-- CARROSSEL - BOOTSTRAP-->
+
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source media="(max-width:600px )" srcset="assets/carrosselmobile1.png">
+                        <source media="(max-width:1000px )" srcset="assets/carrosseltablet1.jpg">
+                        <img src="assets/carrossel-desk.png" class="d-block w-100 img-carrossel" alt="...">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width:600px )" srcset="assets/carrosselmobile2.png">
+                        <source media="(max-width:1000px )" srcset="assets/carrosseltablet2.jpg">
+                        <img src="assets/carrossel-desk2.jpg" class="d-block w-100 img-carrossel" alt="...">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUTOS-->
+        <p class="sobre-botao">Produtos</p>
+
+        <div class="produtos">
+            <div class="produtos-trio">
+                <div class="produtos-container1">
+                    <img class="produto-img" src="assets/produto2.jpg" alt="produto1-hidratante">
+                    <p class="produto-descrição">Hidratante Devs - 100g</p>
+                    <br>
+                    <p class="produto-colecao">Coleção: Fresh Summer Dev</p>
+                    <br>
+                    <p class="produto-preco">R$99</p>
+                    <br>
+                    <button class="produto-botao">Comprar</button>
+                </div>
+
+                <div class="produtos-container1">
+                    <img class="produto-img" src="assets/produto1.jpg" alt="produto1-serum">
+                    <p class="produto-descrição">Sérum DevOps - 50g</p>
+                    <br>
+                    <p class="produto-colecao">Coleção: Recovery</p>
+                    <br>
+                    <p class="produto-preco">R$199</p>
+                    <br>
+                    <button class="produto-botao">Comprar</button>
+                </div>
+
+                <div class="produtos-container1">
+                    <img class="produto-img" src="assets/produto3.jpg" alt="produto1-sabonete">
+                    <p class="produto-descrição">Sabonete Facial - 200mL</p>
+                    <br>
+                    <p class="produto-colecao">Coleção: Bahia</p>
+                    <br>
+                    <p class="produto-preco">R$89</p>
+                    <br>
+                    <button class="produto-botao">Comprar</button>
+                </div>
+            </div>
+
+            <div class="produtos-trio">
+                <div class="produtos-container1">
+                    <img class="produto-img" src="assets/produto4.jpg" alt="produto1-kitcabelo">
+                    <p class="produto-descrição">Kit Cabelos Ressecados - 400mL</p>
+                    <br>
+                    <p class="produto-colecao">Coleção: Recovery</p>
+                    <br>
+                    <p class="produto-preco">R$109</p>
+                    <br>
+                    <button class="produto-botao">Comprar</button>
+                </div>
+
+                <div class="produtos-container1">
+                    <img class="produto-img" src="assets/produto5.jpg" alt="produto1-bodySplash">
+                    <p class="produto-descrição">BodySplash - 100 mL</p>
+                    <br>
+                    <p class="produto-colecao">Coleção: Verona</p>
+                    <br>
+                    <p class="produto-preco">R$59</p>
+                    <br>
+                    <button class="produto-botao">Comprar</button>
+                </div>
+
+                <div class="produtos-container1">
+                    <img class="produto-img" src="assets/produto6.jpg" alt="produto1-velaaromatica">
+                    <p class="produto-descrição">Vela Aromática - 200g</p>
+                    <br>
+                    <p class="produto-colecao">Coleção: Relaxing time </p>
+                    <br>
+                    <p class="produto-preco">R$150</p>
+                    <br>
+                    <button class="produto-botao">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!-- SOBRE OS PRODUTOS-->
+
+        <p class="sobre-botao">Central de Aprendizado </p>
+
+        <div class="sobre">
+
+            <div class="sobre-duplas">
+                <div class="sobre-container">
+                    <img class="sobre-produto-img" src="assets/produto2-sobre.jpg" alt="">
+
+                    <p class="sobre-titulo">Hidratante</p>
+                    <p class="sobre-descricao">O Hidratante para Devs traz uma opção de autocuidado aonde você for! Com
+                        ativos mais hidratantes, o
+                        hidratante corporal da linha Devs entrega muita hidratação para uma pele bem tratada e bem
+                        resolvida. </p>
+                    <p class="icone-sobre"><span class="material-symbols-outlined icone-sobre ">cruelty_free</span>
+                        Crueltt
+                        Free &
+                        vegano
+                    </p>
+                    <br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre ">water_drop</span>
+                        Hidratacação de até 48
+                        horas</p><br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre ">recycling</span>
+                        Embalagem
+                        reciclada</p>
+                </div>
+
+                <div class="sobre-container">
+                    <img class="sobre-produto-img" src="assets/produto1-sobre.jpg" alt="">
+
+                    <p class="sobre-titulo">Sérum DevOps</p>
+                    <p class="sobre-descricao">O Sérum de Vitamina C 10% é um sérum super concentrado de uso diário.
+                        Inovador,forma um escudo
+                        antioxidante protetor que blinda a pele contra os agressores externos como poluição, radicais
+                        livres
+                        e
+                        luz azul. </p>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">cruelty_free</span>
+                        Crueltt
+                        Free &
+                        vegano
+                    </p><br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">water_drop</span> Não
+                        deixa
+                        a pele
+                        oleosa</p><br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">recycling</span>
+                        Embalagem
+                        reciclada</p>
+                </div>
+            </div>
+
+            <div class="sobre-duplas">
+                <div class="sobre-container">
+                    <img class="sobre-produto-img" src="assets/produto3-sobre.jpg" alt="">
+
+                    <p class="sobre-titulo">Sabonete Facial</p>
+                    <p class="sobre-descricao">
+                        O Gel de Limpeza Facial Antioxidante Vitamina C da Linha Botik chegou para limpar ainda mais a
+                        sua
+                        pele e deixar seus dias mais bonitos. </p>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">cruelty_free</span>
+                        Crueltt
+                        Free &
+                        vegano
+                    </p><br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">face</span> Para todos
+                        os
+                        tipos de pele
+                    </p><br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">recycling</span>
+                        Embalagem
+                        reciclada</p>
+                </div>
+
+                <div class="sobre-container">
+                    <img class="sobre-produto-img" src="assets/produto4-sobre.jpg" alt="">
+
+                    <p class="sobre-titulo">Kit Cabelos Ressecados</p>
+                    <p class="sobre-descricao">O Kit para Cabelos consegue reparar os danos da fibra capilar sem pesar
+                        nos
+                        fios. Assim, você pode
+                        fazer a mudança que quiser no visual, desde alisamento, descoloração, tintura, escova
+                        progressiva,
+                        relaxamento ou permanente, que a ajuda sempre estará à mão. </p>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre ">cruelty_free</span>
+                        Crueltt
+                        Free &
+                        vegano
+                    </p><br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">bolt</span> Recupera até
+                        3
+                        anos de danos
+                    </p><br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">recycling</span>
+                        Embalagem
+                        reciclada</p>
+                </div>
+            </div>
+
+            <div class="sobre-duplas">
+                <div class="sobre-container">
+                    <img class="sobre-produto-img" src="assets/produto5-sobre.jpg" alt="">
+
+                    <p class="sobre-titulo">BodySplash</p>
+                    <p class="sobre-descricao">O Body Splash Devs é perfeito para completar a sua rotina de perfumação
+                        com a
+                        linha do Boticário
+                        que você ama! </p>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">cruelty_free</span>
+                        Crueltt
+                        Free &
+                        vegano
+                    </p><br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">emoji_nature</span>
+                        Cheiro
+                        de frescor
+                        por mais tempo</p><br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">recycling</span>
+                        Embalagem
+                        reciclada</p>
+                </div>
+
+                <div class="sobre-container">
+                    <img class="sobre-produto-img" src="assets/produto6-sobre.jpg" alt="">
+
+                    <p class="sobre-titulo">Vela Aromática</p>
+                    <p class="sobre-descricao">O Vela Aromática é perfeita para ser desfrutada em momentos que exigem um
+                        momento de relaxamento. Aproveite seu momento para desfrutar de autocuidado.</p>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">cruelty_free</span>
+                        Crueltt
+                        Free &
+                        vegano
+                    </p><br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">fireplace</span> 10
+                        horas de
+                        queima </p><br>
+                    <p class="icone-sobre"><span class="material-symbols-outlined  icone-sobre">recycling</span>
+                        Embalagem
+                        reciclada</p>
+                </div>
+
+            </div>
+            <p class="sobre-botao">Ver mais </p>
+
+        </div>
+
+        <!-- NEWSLETTER-->
+    </main>
+    <footer>
+        <div class="news">
+            <div class="news-left">
+                <p class="news-titulo">Cadastre seu e-mail e receba todas as novidades e promoções!</p>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Digite o seu e-mail"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
+            </div>
+            <section class="rights">
+                <div>
+                    
+                    <p class="link-rights"> <a class="link-rights" href="https://www.linkedin.com/in/caarolinas/">Carolina Oliveira </a> ©
+                        2024. All Rights Reserved. </p>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

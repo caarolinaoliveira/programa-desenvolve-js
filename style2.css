@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#container{
+    height: 350px;
+    width: 400px;
+
+    margin: auto;
+    margin-top: 200px;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, .2) ;
+}
+
+.title{
+    color: white;
+    font-family: 'Sora', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-login{
+    text-align: center;
+}
+
+input{
+    height: 35px;
+    width: 300px;
+    backdrop-filter: blur(10px);
+    border: 0.5px solid rgba(255, 255, 255, 0.455);
+    border-radius: 1rem;
+    margin-bottom: 10px;
+    color: white;
+    background-color: transparent;
+    font-family: 'Sora', sans-serif;
+    font-weight: 200;
+    
+
+    
+    
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+   
+    outline: 0;
+} 
+
+input::placeholder{
+    color: white;
+}
+
+
+.input1{
+    background-image: url(assets/user-solid-24.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    padding-right: 30px;
+}
+.input2{
+    background-image: url(assets/lock-alt-solid-24.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    padding-right: 30px;
+    
+}
+.checkbox{
+    height: 15px;
+    width: 15px;
+    margin-left: 30px;
+
+}
+.container-remember{
+    display: flex;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.forgot{
+    position: absolute;
+    left: 210px;
+    padding-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+.submit{   
+    width: 100%;
+    text-align: center;
+    display: box;
+}
+p, a{
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+a{
+  font-weight: normal;  
+}
+
+.container-submit{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 3%;
+}
+
+.submit:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="js/script.js" defer type="module"></script>
+</head>
+<body>
+    <section id="container">
+        <h1 class="title">Registre-se</h1>
+
+        <form class="principal__formulario" data-formulario>
+            <fieldset class="formulario__campo">
+                <label class="campo__etiqueta" for="nome">Nome</label><br>
+                <input name="nome" id="nome" class="campo__escrita" type="text" minlength="3" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo">
+                <label class="campo__etiqueta" for="email">E-mail</label><br>
+                <input name="email" id="email" class="campo__escrita" type="email" minlength="5" required/>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="formulario__campo">
+                <label class="campo__etiqueta" for="rg">RG</label><br>
+                <input name="rg" id="rg" class="campo__escrita campo__escrita--menor" type="text" required/>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="formulario__campo">
+                <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label><br>
+                <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required type="text" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"/>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="formulario__campo">
+                <label class="campo__etiqueta" for="aniversario">Data de nascimento</label><br>
+                <input name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" type="date" required/>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="formulario__termos">
+                <input name="termos" class="termos__input" type="checkbox" required><br>
+                <p class="termos__texto" >Li e estou ciente quanto às condições de tratamento dos meus dados conforme
+                    descrito na Política
+                    de
+                    Privacidade.</p>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <div>
+                <input value="Avançar" class="formulario__botao" id="enviar" type="submit" data-botao-enviar>
+                <span class="mensagem-erro"></span>
+            </div>
+        </form>
+
+
+
+
+    </section>
+    
+</body>
+</html>
