@@ -84,3 +84,4 @@ function verificaCampo(campo){
     }
 }
 
+addEventListener("click",alert("As validações principais em js estão nos campos: cpf e Data de nascimento"))
